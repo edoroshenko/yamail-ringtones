@@ -18,5 +18,5 @@
 		}, timeout);
 	};
 
-	play(melody);
+	playNote(melody);
 })();
