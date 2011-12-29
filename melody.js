@@ -3,6 +3,9 @@
 	var scale = ['c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#', 'a', 'a#', 'b'];
 	var bounces = $('.b-ball_bounce');
 	var playNote = function(str) {
+		if (!str) {
+			return;
+		}
 		var notes    = str.split(',');
 		var note     = notes.shift();
 		var parts    = note.split('|');
